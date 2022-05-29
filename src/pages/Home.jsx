@@ -1,6 +1,6 @@
 export const Home = () => {
   return (
-    <main className="my-16 mx-16 space-y-8 bg-red-500">
+    <main className="my-16 mx-16 space-y-8">
       <div className="flex select-none flex-col items-center">
         <i className="ri-shield-check-fill ri-5x"></i>
         <h1 className="text-lg">Welcome</h1>

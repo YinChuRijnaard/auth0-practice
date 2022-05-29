@@ -1,13 +1,18 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import { Auth0Provider } from "@auth0/auth0-react";
+import ReactDOM from "react-dom";
 
 import "remixicon/fonts/remixicon.css";
 import "./index.css";
 
 import { App } from "./App";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+ReactDOM.render(
+  <Auth0Provider
+    domain="dev-fbz30sd7.us.auth0.com"
+    clientId="2HZvgIpjuQbHo0IMvCuFzIx280WfExc4"
+    redirectUri={window.location.origin}>
     <App />
-  </React.StrictMode>,
+  </Auth0Provider>,
+  document.getElementById("root"),
 );
